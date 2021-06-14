@@ -29,15 +29,13 @@ class Product {
     this.fontCamera = fontCamera;
   }
 
-  checkType() {}
-
   render(index) {
     return `
         <div class="render-products" id=${this.id}>
         <img src="${this.image}" alt="">
         <p class ="product-name ${index}">${this.name}</p>
         <p class ="product-price">${this.price}$</p>
-        <a><button class="btn btn-add cart-${index}">Add to cart</button></a>
+        <a><button class="btn btn-add cart-${index}"  id=${this.id}>Add to cart</button></a>
         
         </div>    
     `;
